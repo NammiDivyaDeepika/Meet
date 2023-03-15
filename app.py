@@ -3,7 +3,6 @@ from PIL import Image
 
 st. set_page_config(layout="wide") 
 image = Image.open("Saje.jpg")
-
 st.header('Dear International Students in Cologne. Are you following the Saje Mystery? We’ve glad you’ve found us.')
 st.subheader('Here’s the next part of the story:')
 st.markdown("[Voice message left at 22:16]")
