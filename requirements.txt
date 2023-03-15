@@ -1,0 +1,2 @@
+streamlit
+Pillow==8.2.0
