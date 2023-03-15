@@ -3,8 +3,16 @@ from PIL import Image
 
 st. set_page_config(layout="wide") 
 
+col1, col2, col3 = st.columns(3)
 
-st.image("Saje.jpg")
+with col1:
+    st.write(' ')
+with col2:
+    image = Image.open("Saje.jpg")
+    st.image(image)
+with col3:
+    st.write(' ')
+
 st.title('Dear International Students in Cologne. Are you following the Saje Mystery? We’ve glad you’ve found us.')
 st.caption('Here’s the next part of the story:')
 st.markdown("[Voice message left at 22:16]")
