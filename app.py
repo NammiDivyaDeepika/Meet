@@ -1,7 +1,26 @@
 import streamlit as st
 from PIL import Image
 
+
 st. set_page_config(layout="wide") 
+import streamlit as st
+
+# Define the items you want to include in the menu
+menu_items = ["Home", "About", "Contact", "Settings"]
+
+# Create the menu using the st.sidebar function
+selection = st.sidebar.selectbox("Select an option", menu_items)
+
+# Define the content for each menu item
+if selection == "Home":
+    st.write("Welcome to the home page!")
+elif selection == "About":
+    st.write("This app was created by John Doe.")
+elif selection == "Contact":
+    st.write("You can reach us at contact@example.com.")
+elif selection == "Settings":
+    st.write("Here are the app settings.")
+
 
 col1, col2, col3 = st.columns(3)
 
