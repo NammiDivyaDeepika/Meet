@@ -14,7 +14,7 @@ with col3:
     st.write(' ')
 
 st.success("Congratulations…! You are just one step away from solving the mystery. Your persistence and analytical skills have led you to this point, and there is no doubt that you will be successful in completing this final task.")
-col4, col5, col6, col7, col8,= st.columns(3)
+
 
 
 if st.button('Scan Me'):
