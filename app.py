@@ -14,12 +14,20 @@ with col3:
     st.write(' ')
 
 st.success("Congratulations…! You are just one step away from solving the mystery. Your persistence and analytical skills have led you to this point, and there is no doubt that you will be successful in completing this final task.")
+col4, col5, col6 = st.columns(3)
 
-if st.button('Scan Me'):
+with col4:
+    st.write(' ')
+with col5:
+        if st.button('Scan Me'):
+             qr_image = Image.open('QR.jpg')
+             st.image(qr_image, width=200)
+        else:
+             st.write('Click the button to scan the QR code')
+with col6:
+    st.write(' ')
     
-    qr_image = Image.open('QR.jpg')
-    st.image(qr_image, width=200)
-else:
-    st.write('Click the button to scan the QR code')
+    
+
     
 st.subheader("The Fresenians")
