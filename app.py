@@ -8,7 +8,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.write(' ')
 with col2:
-    image = Image.open("Saje.jpg")
+    image = Image.open("Saje.png")
     st.image(image)
 with col3:
     st.write(' ')
