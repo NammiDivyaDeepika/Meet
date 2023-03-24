@@ -25,7 +25,10 @@ st.markdown("[End of message]")
 st.write('***')
 st.success("Curious to find out what happens next? You’ll find out more when we meet on campus on Thursday.")
 if st.button('Scan Me'):
-    st.image('QR.jpg')
+    
+    qr_image = Image.open('QR.jpg')
+    st.image(qr_image, width=200)
 else:
     st.write('Click the button to scan the QR code')
+    
 st.subheader("The Fresenians")
